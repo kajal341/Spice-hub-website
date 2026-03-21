@@ -1,0 +1,200 @@
+#navbar-top1{
+    position:fixed;
+    z-index: 5;
+    width:100%;
+  
+}
+	
+	
+}.container-fluid{
+	margin-left: 20px;
+	background-color:white;
+}
+
+.heading{
+	
+	margin-top: 5px;
+	margin-left: 30px;
+}
+#contact{
+	margin-left: 40px;
+}
+
+.filter{
+	border-radius: 50px;
+	height:40px;
+	width: 90px;
+	border: 1px solid orange;
+}
+.filter:hover{
+    background-color: orangered;
+    color:white;
+    
+}
+.card1{
+	margin-top: 20px;
+	margin-left: 20px;
+	
+	
+}
+.container{
+	
+	border:2px solid geen;
+	width:100%;
+	
+	
+}
+
+.offer{
+	background-color: orangered;
+	
+}
+.card{
+	height:400px;
+	margin-top: 40px;
+	border-radius: 50px;
+	
+	
+}
+#lunch-box{
+	margin-left: 70px;
+}
+#small-box{
+	margin-top: 30px;
+	border-radius: 50px;
+
+}
+.simple-box{
+	margin-top: 40px;
+	border-radius: 10px;
+	height:250px;
+	width:85%;
+}
+
+#white-box1{
+	margin-top: 15px;
+	color: black;
+	font-weight: bold;
+	margin-left: 10px;
+	
+	
+	
+}
+#white-box{
+	height:60px;
+	width:50%;
+	border-radius: 10px;
+	border:1px solid gray;
+	margin-top: 20px;
+}
+#white-box:hover{
+	transform:translate(5px);
+	box-shadow: 10px 10px 40px gray;
+
+}
+ #white-box1 .orange:hover{
+	background-color: aliceblue;
+	color:orange;
+
+}
+
+#text{
+	
+	width:100%;
+	margin-top: 40px;
+	border-radius: 10px;
+	border:1px solid gray;
+	box-shadow: 10px 10px 40px gray;
+}
+#text1{
+	margin-top: 20px;
+	height: 60px;
+	border: 1px solid white;
+	border-radius: 10px;
+	
+}
+#text2{
+	font-weight: bold;
+	margin-top: 15px;
+
+	
+}
+#text:hover{
+	transform:translate(5px);
+	box-shadow: 10px 10px 40px orange;
+	
+}
+#text1:hover{
+	font-weight: bold;
+}
+#mobile{
+	height:400px;
+	width:100%;
+	
+	margin-top: 40px;
+	border-radius: 10px;
+	background-color: floralwhite;
+}
+
+.orange-1{
+	box-sizing: border-box;
+padding-left: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#box{
+	padding-left: 10px;
+}
+.orange-1:hover{
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	
+}
+
+#overflow{
+	overflow: hidden;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+#get{
+	font-size: 20px;
+	margin-top: 20px;
+	
+}
+#hide{
+	display: none;
+}
+#footer{
+		
+
+	background-color: black;
+
+	margin-top: 30px;
+	color:dimgray;
+
+}
+#footer1{
+	margin-left: 60px;
+}
+
+.r1{
+	border: 2px solid gray;
+	padding-left: 30px;
+}
+.last{
+	border:1px solid black;
+}
+
+.card-img-top{
+	opacity: 1;
+	scale:1;
+}
+.simple-box{
+	opacity: 1;
+	scale:1;
+}
+#carousel-image{
+    margin-top: 100px;
+}
