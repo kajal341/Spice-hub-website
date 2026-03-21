@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+<head>
+	
+    <link rel="stylesheet" href="Restaurant.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<script src="gsap.min.js"></script>
+	   <script src="ScrollTrigger.min.js"></script>
+
+    </head>
+	<body>
+ <!--navbar-->
+    <section id="navbar-top1">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+	      <div id="search-item"><img src="https://cdn.prod.website-files.com/6502a82cff431778b5d82829/651b9c8fa3255cf8ca0c191f_EazyDiner%20Logo%20Text.webp" height="70px" width="100%"></div>
+
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+       
+        
+      
+        <li class="nav-item dropdown" id="lunch-box">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lunch
+          </a>
+          <ul class="dropdown-menu"  aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Tea</a></li>
+			 <li><a class="dropdown-item" href="#">Coffee</a></li>
+			 <li><a class="dropdown-item" href="#">Sandwich</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Breakfast
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+			 <li><a class="dropdown-item" href="#">Another action</a></li>
+			 <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+            
+          </ul>
+        </li>
+		   <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dinner
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+			 <li><a class="dropdown-item" href="#">Another action</a></li>
+			 <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+            
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"type="submit">Login</button>
+		  
+      </form>
+		<div id="contact">Contact Us</div>
+    </div>
+  </div>
+</nav>
+    </section>
+		<!----carousel-->
+		
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/banner/web_restaurant_listing.png?format=auto&quality=80" id="carousel-image"class="d-block w-100" alt="...">
+    </div>
+   
+    
+  </div>
+</div>
+		<!----card-->
+	
+		
+		
+		<div class="container">
+			<div class="row">
+					<p>Home /
+Delhi NCR /
+Top Restaurants in Delhi NCR /
+Faridabad</p>
+		
+				<h5>Best Restaurants in Faridabad</h5>
+				 
+				<div class="col-lg-1 col-sm-3"><button class="filter">Filter</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">Sortby</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">Payeazy</button></div>					
+				<div class="col-lg-1 col-sm-3"><button class="filter">PRIME</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">Buffet</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">Veg</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">50%off</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">prepaid</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">Bars</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">NorthIndian</button></div>
+				<div class="col-lg-1 col-sm-3"><button class="filter">Chinese</button></div>
+
+					
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/688938/restaurant020230605093213.jpeg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top" alt="">
+					<div class="offer">%Flat 20% + 25% with Bank Offers</div>
+  <div class="card-body">
+    <h5 class="card-title">Brew Berry</h5>
+    <p class="card-text">NIT, Faridabad
+Multicuisine
+₹400 for two</p>
+    <a href="#" class="btn btn-primary">4.0</a>
+  </div>
+</div></div>
+			    <div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/692322/restaurant020241102075826.jpg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top" alt="...">
+		<div class="offer">%Flat 20% + 25% with Bank Offers</div>			
+  <div class="card-body">
+    <h5 class="card-title">YouMee</h5>
+    <p class="card-text">New Industrial Town, Chinese, Thai, Asian
+₹1200 for two</p>
+    <a href="#" class="btn btn-primary">4.4</a>
+  </div>
+</div></div>
+				<div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/666276/restaurant120240731043558.jpg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top" alt="...">
+					<div class="offer">%Flat 20% + 25% with Bank Offers</div>
+  <div class="card-body">
+    <h5 class="card-title">Barbeque 29</h5>
+    <p class="card-text">NIT, Faridabad
+Barbeque
+₹1000 for two</p>
+    <a href="#" class="btn btn-primary">4.3</a>
+  </div>
+</div></div>
+
+			
+			
+			
+			</div>
+		
+		</div>
+		
+		
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12" id="small-box"><img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/ads/ad20251204054012.jpg?format=auto&quality=80" width="93%" height="120px"></div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/688938/restaurant020230605093213.jpeg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top"alt="">
+					<div class="offer">%Flat 20% + 25% with Bank Offers</div>
+  <div class="card-body">
+    <h5 class="card-title">Brew Berry</h5>
+    <p class="card-text">NIT, Faridabad
+Multicuisine
+₹400 for two</p>
+    <a href="#" class="btn btn-primary">4.0</a>
+  </div>
+</div></div>
+			    <div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/692322/restaurant020241102075826.jpg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top" alt="...">
+		<div class="offer">%Flat 20% + 25% with Bank Offers</div>			
+  <div class="card-body">
+    <h5 class="card-title">YouMee</h5>
+    <p class="card-text">New Industrial Town, Chinese, Thai, Asian
+₹1200 for two</p>
+    <a href="#" class="btn btn-primary">4.4</a>
+  </div>
+</div></div>
+				<div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/666276/restaurant120240731043558.jpg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top" alt="...">
+					<div class="offer">%Flat 20% + 25% with Bank Offers</div>
+  <div class="card-body">
+    <h5 class="card-title">Barbeque 29</h5>
+    <p class="card-text">NIT, Faridabad
+Barbeque
+₹1000 for two</p>
+    <a href="#" class="btn btn-primary">4.3</a>
+  </div>
+</div></div>
+
+			
+			
+			
+			</div>
+		
+		</div>
+		
+		
+		
+		
+		
+	<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-4 col-md-12"><img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/ads/ad20260105061611.jpg?format=auto&quality=80" height="165px" class="simple-box"></div>
+				<div class="col-lg-4 col-md-12"><img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/ads/ad20251118055224.jpg?format=auto&quality=80" height="165px" class="simple-box"></div>
+                <div class="col-lg-4 col-md-12"><img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/ads/ad20260115070025.jpg?format=auto&quality=80" height="165px" class="simple-box"></div>
+				
+			
+				
+                
+		
+		</div>
+	</div>
+		
+		
+		
+		
+		
+		
+		<div class="container" >
+			<div class="row">
+				<div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/644019/restaurant320191031111459.jpg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top"alt="">
+					<div class="offer">%Flat 20% + 25% with Bank Offers</div>
+  <div class="card-body">
+    <h5 class="card-title">Brew Berry</h5>
+    <p class="card-text">NIT, Faridabad
+Multicuisine
+₹400 for two</p>
+    <a href="#" class="btn btn-primary">4.0</a>
+  </div>
+</div></div>
+			    <div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/692330/restaurant020250207081606.jpg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top" alt="...">
+		<div class="offer">%Flat 20% + 25% with Bank Offers</div>			
+  <div class="card-body">
+    <h5 class="card-title">YouMee</h5>
+    <p class="card-text">New Industrial Town, Chinese, Thai, Asian
+₹1200 for two</p>
+    <a href="#" class="btn btn-primary">4.4</a>
+  </div>
+</div></div>
+				<div class="col-lg-4 col-md-12"><div class="card" style="width: 18rem;">
+  <img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/692987/restaurant1420240122082836.jpeg?width=818&height=450&mode=crop?format=auto&quality=80" class="card-img-top" alt="...">
+					<div class="offer">%Flat 20% + 25% with Bank Offers</div>
+  <div class="card-body">
+    <h5 class="card-title">Barbeque 29</h5>
+    <p class="card-text">NIT, Faridabad
+Barbeque
+₹1000 for two</p>
+    <a href="#" class="btn btn-primary">4.3</a>
+  </div>
+</div></div>
+
+			
+			
+			
+			</div>
+		
+		</div>
+	
+		<div class="container" id="white-box">
+			<div class="row" id="white-box1" >
+				 
+				<div class="col-lg-2 col-sm-3 px-4 orange-1" id="box">Previous</div>
+				<div class="col-lg-1 col-sm-1 px-4 orange-1">1</div>
+				<div class="col-lg-1 col-sm-1 px-4   orange-1">2</div>					
+				<div class="col-lg-1 col-sm-1 px-4    orange-1">3</div>
+				<div class="col-lg-1 col-sm-1 px-4    orange-1">4</div>
+				<div class="col-lg-1 col-sm-1 px-4   orange-1">5</div>
+				<div class="col-lg-1 col-sm-1 px-4   orange-1">6</div>
+				<div class="col-lg-1 col-sm-1 px-4    orange-1">7</div>
+				<div class="col-lg-1 col-sm-1 px-4   orange-1">8</div>
+				<div class="col-lg-2 col-sm-1 px-4    orange-1">Next</div>
+				
+
+			</div>
+		</div>
+		
+		
+		
+		<div class="container" id="text">
+		
+		<div class="row">
+		<div class="col-lg-12 col-sm-12" id="text2">Popular Cuisines Near Me <i class="fa-solid fa-caret-down" onclick="show()"></i></div>
+			
+		
+		
+		
+		</div>
+			<section id="hide">
+			<div class="row" >
+			
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>	
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>	
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>	
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>	
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>	
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>	
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>	
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>
+			<div class="col-lg-3 col-sm-4 sub"><button id="text1">North Indian Restaurant Near me</button></div>
+			
+			
+			</div>
+		</section>
+		</div>
+		
+		
+	
+		<div class="container" id="mobile">	
+		<div class="row">
+			<div class="col-lg-4 col-sm-12"><img src="https://dt4l9bx31tioh.cloudfront.net/eazymedia//default/downloadApp.png?format=auto&quality=80" height="390px" id="overflow"></div>
+			<div class="col-lg-4 col-sm-12" id="get" ><b>Get the EazyDiner App</b><br>Earn 200 EazyPoints on registration.</div>
+			<div class="col-lg-4 col-sm-12"><b>Download Now</b><br><img src="https://www.eazydiner.com/images/google.png"><br> <img src="https://www.eazydiner.com/images/apple.png"></div>
+			
+			</div>
+		</div>
+		
+		
+		<div class="container-fluid" id="footer">	
+		<div class="row" id="footer1">
+			<div class="col-lg-3 col-sm-12"><b>EAZYDINEAR</b><br>About Us<br>Food trends (Blog)<br>Partner offers<br>Download App<br>Contact US<br>Career</div>
+	<div class="col-lg-3 col-sm-6"><b>discover</b><br>Table booking<br>Fast food near me</div>
+	<div class="col-lg-3 col-sm-6"><b>for you</b><br>Prime Subscription<br>Refer & Earn<br>Terms & Conditions<br>Privacy Policy</div>
+	<div class="col-lg-3 col-sm-6"><b>for restaurants</b><br>List your Restaurant<br>Livetable - Restaurants SaaS</div>
+			
+			<div class="col-lg-12 col-sm-12"><b><br><br>BOOK BEST RESTAURANTS IN</b><br> Delhi NCR | Mumbai | Bengaluru | Chennai | Pune | Kolkata | Dubai | Goa | Ahmedabad | Jaipur | Agra | Hyderabad | Lucknow | Kochi | Coimbatore | Ranchi<br> | Visakhapatnam | Patna | Amritsar | Bhubaneswar | Indore | Ludhiana | Mysuru | Vadodara | Thiruvananthapuram | Nagpur | Udaipur | Madurai | Abu Dhabi<br> | Chandigarh Tricity | Mangalore Tricity | All Cities<br>Explore best restaurants nearby Faridabad!</div>
+			
+	<div class="col-lg-4 col-sm-12 last"><br>@EazyDiner Private Limited.</div>
+				<div class="col-lg-4 col-sm-12 last"><br><i class="fa-solid fa-dollar-sign"></i>786 100 4444</div>
+	<div class="col-lg-4 col-sm-12 last"><br>Connect with us: <i class="fa-brands fa-facebook-f"></i> <i class="fa-solid fa-x"></i> <i class="fa-brands fa-instagram"></i>  <i class="fa-brands fa-youtube"></i></div>
+
+			
+	 </div>
+		</div>
+		
+		
+		
+		<script>
+	function show(){
+		document.getElementById("hide").style.display="block";
+	}
+		gsap.registerPlugin(ScrollTrigger);
+	gsap.from(".card-img-top",{
+		
+	scale:0,
+		opacity:0,
+	
+		duration:3,
+		scrollTrigger:{
+		trigger:".card-img-top",
+		start:"top 70%"
+	}
+	});
+			
+				gsap.registerPlugin(ScrollTrigger);
+	gsap.from(".simple-box",{
+		
+
+		opacity:0,
+	
+		duration:3,
+		scrollTrigger:{
+		trigger:".simple-box",
+		start:"top 80%"
+	}
+	});
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
